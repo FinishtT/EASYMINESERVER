@@ -14,3 +14,5 @@ The project is not stopped.
 
 Download : EASYMINESERVER.exe and UPDATE.exe in the section SOFTWARES.
 or
+https://github.com/XsplitS/EASYMINESERVER/raw/master/SOFTWARES/EasyMineServer.exe
+https://github.com/XsplitS/EASYMINESERVER/raw/master/SOFTWARES/UPDATE.exe
