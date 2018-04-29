@@ -1,1 +1,13 @@
 Version : 1.2
+Added new components.
+Added easy update.
+Patch problem with the scrolling richtextbox.
+Patch problem with the color richtextbox.
+
+#1.1
+Added new components.
+Added version selection.
+Patch problem with the Form in busy.
+
+#1.0
+Basic.
