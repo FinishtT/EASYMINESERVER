@@ -5,9 +5,7 @@ Hello everybody !
 The goal is of easy the life of people for create a Minecraft server.
 
 If you have any ideas or suggestions,
-1) Join me on teamspeak at this address : hrtm.cf 
-2) Come on this website : https://flvm.cf
-3) Come on this website : http://hrtm.cf
+1) Join me on teamspeak at this address : hrtm.cf:53487
 
 The project is not stopped.
 
