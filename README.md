@@ -10,7 +10,16 @@ If you have any ideas or suggestions,
 The project is not stopped.
 
 
+
 Download EASYMINESERVER.zip : https://github.com/XsplitS/EASYMINESERVER/raw/master/EASYMINESERVER.zip
+
+
+
+Optional
+Recommended OS : [Windows 8/8.1/10]
+Install FONT : [font/Minecraft.ttf]
+
+
 
 PC CONFIGURATION : https://minecraft.gamepedia.com/Server/Requirements
 
