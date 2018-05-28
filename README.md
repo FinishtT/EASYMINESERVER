@@ -14,13 +14,20 @@ Download EASYMINESERVER.zip : https://github.com/XsplitS/EASYMINESERVER/raw/mast
 
 PC CONFIGURATION : https://minecraft.gamepedia.com/Server/Requirements
 
+Minimum
+PLAYERS : 1-4
+CPU : Intel Core 2 Duo or AMD Athlon 64 x2
+RAM : 2GB
+HDD/SSD : At least 150MB for world saves
 
-REQUIREMENTS      PLAYERS          CPU              RAM                  HDD/SSD             
+Recommended
+PLAYERS : 5-10
+CPU : Intel Core 2 Duo or AMD Athlon 64 x2
+RAM : 3GB
+HDD/SSD : At least 200MB for world saves
 
-Minimum           1-4        Intel Core 2 Duo or    2GB       At least 150MB for world saves    
-                              AMD Athlon 64 x2
-
-Recommended       5-10       Intel Core 2 Duo or    3GB      	At least 200MB for world saves
-                              AMD Athlon 64 x2
-
-Best              10+        Intel Core i7-4790k    8GB             At least 200MB SSD  
+Best
+PLAYERS : 10+
+CPU : Intel Core i7-4790k
+RAM : 8GB
+HDD/SSD : At least 200MB SSD
