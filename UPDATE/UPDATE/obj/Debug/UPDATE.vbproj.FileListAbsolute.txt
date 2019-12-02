@@ -1,0 +1,30 @@
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Debug\UPDATE.exe.config
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Debug\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Debug\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Debug\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Debug\UPDATE.UPDATE.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Debug\UPDATE.Resources.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Debug\UPDATE.vbproj.GenerateResource.Cache
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Debug\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Debug\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Debug\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.exe.config
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.UPDATE.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.Resources.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.vbproj.GenerateResource.Cache
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.exe.config
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.exe
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.pdb
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Debug\UPDATE.xml
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.UPDATE.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.Resources.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.vbproj.GenerateResource.Cache
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.exe
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.xml
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.pdb

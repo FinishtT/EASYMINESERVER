@@ -1,0 +1,33 @@
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Release\UPDATE.exe.config
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Release\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Release\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Release\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Release\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Release\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\bin\Release\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Release\UPDATE.vbprojResolveAssemblyReference.cache
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Release\UPDATE.UPDATE.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Release\UPDATE.Resources.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\Tableau des clients du Teamspeak HRTM UPDATE\obj\Release\UPDATE.vbproj.GenerateResource.Cache
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.exe.config
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.vbprojResolveAssemblyReference.cache
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.UPDATE.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.Resources.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.vbproj.GenerateResource.Cache
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.exe.config
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.exe
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.pdb
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\bin\Release\UPDATE.xml
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.vbprojResolveAssemblyReference.cache
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.UPDATE.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.Resources.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.vbproj.GenerateResource.Cache
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.exe
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.xml
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Release\UPDATE.pdb
