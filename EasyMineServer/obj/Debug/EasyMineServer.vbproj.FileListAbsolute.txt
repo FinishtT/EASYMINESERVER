@@ -1,0 +1,36 @@
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.exe.config
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.exe
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.pdb
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.xml
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.FormEasyMineServer.resources
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.Resources.resources
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.vbproj.GenerateResource.Cache
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.exe
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.xml
+D:\Utilisateurs\Administrateur\Desktop\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.exe.config
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.exe
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.pdb
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.xml
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.FormEasyMineServer.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.Resources.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.vbproj.GenerateResource.Cache
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.SETTINGS.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.SProperties.resources
+D:\Utilisateurs\Administrateur\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.SPLASH.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.exe.config
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.exe
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.xml
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.pdb
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.exe
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.pdb
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\bin\Debug\EasyMineServer.xml
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.Resources.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.SPLASH.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.SProperties.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.SETTINGS.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.FormEasyMineServer.resources
+D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.vbproj.GenerateResource.Cache
