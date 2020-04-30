@@ -11,8 +11,8 @@ Public Class FormEasyMineServer
     Dim code As String
     Dim k As String
     Dim LocationAppdata As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
-
-    Dim vServerMinecraft As String
+    Public Shared vServerMinecraft As String
+    Dim maj As String = "1.8.2"
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
@@ -22,58 +22,43 @@ Public Class FormEasyMineServer
 
     End Sub
 
-    Public Async Sub startserver()
-
-        RichTextBox1.Select(RichTextBox1.TextLength, 0)
-        RichTextBox1.SelectionColor = Color.Black
-        RichTextBox1.AppendText(vbCrLf & "Download Finished")
-        Await Task.Delay(2000)
-        RichTextBox1.Clear()
-
-        Button1.Enabled = False
-        ComboBox1.Enabled = False
-        ComboBox2.Enabled = False
-
-        launchServer()
-
-    End Sub
-
     Private Sub FormEasyMineServer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'JAVA VERIFICATION'
         Dim regKey As Microsoft.Win32.RegistryKey
-
         regKey = My.Computer.Registry.LocalMachine.OpenSubKey("SOFTWARE\JavaSoft", True)
-
         If (regKey Is Nothing) Then
 
             MsgBox("Install JAVA before launching this software", MsgBoxStyle.Information)
             Process.Start("https://java.com/en/download/manual.jsp")
             Close()
-
-        Else
-
-
         End If
+        'JAVA VERIFICATION'
 
         DownloadFile.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
         DownloadFile.Headers.Clear()
 
+        'MAJ'
         Try
 
-            If (DownloadFile.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf") = "1.8") Then
-
-
+            If (DownloadFile.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf").Remove(5, 1) = maj) Then
 
             Else
 
                 Try
+                    Dim msgyesno As Integer = MsgBox("Une mise à jour est disponible, voulez-vous la démarrer ?", MsgBoxStyle.YesNo + MsgBoxStyle.Information)
 
-                    Process.Start("UPDATE.exe")
-                    Close()
+                    If (msgyesno = vbYes) Then
+
+
+                        Process.Start("UPDATE.exe")
+                        Close()
+
+                    End If
 
                 Catch ex As Exception
 
-                    MsgBox("Cannot launch UPDATE.exe", MsgBoxStyle.Critical)
+                    MsgBox("UPDATE.exe not found", MsgBoxStyle.Critical)
 
                 End Try
 
@@ -81,7 +66,7 @@ Public Class FormEasyMineServer
 
         Catch ex As Exception
 
-            MsgBox(ex.Message & " No connection ?", MsgBoxStyle.Information)
+            MsgBox(ex.Message & " No connection ?, Vous passer en mode hors ligne.", MsgBoxStyle.Information)
 
         End Try
 
@@ -103,7 +88,7 @@ Public Class FormEasyMineServer
 
         Catch ex As Exception
 
-            Label3.Text = "Ip public : ??"
+            Label3.Text = "Ip publique : ??"
 
         End Try
 
@@ -204,14 +189,7 @@ Public Class FormEasyMineServer
             While Not readVersion.EndOfStream
 
                 Dim sLine As String = readVersion.ReadLine
-                ComboBox1.Items.Add(sLine)
-
-                If Not readVersion.EndOfStream Then
-
-                    sLine = readVersion.ReadLine
-                    ComboBox1.Items.Add(sLine)
-
-                End If
+                ComboBox2.Items.Add(sLine)
 
             End While
 
@@ -232,48 +210,17 @@ Public Class FormEasyMineServer
         DownloadFile.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
         DownloadFile.Headers.Clear()
 
-        ComboBox2.Text = "1024"
-        ComboBox1.Text = "1.13.2"
+        ComboBox1.Text = "1024"
+        ComboBox2.Text = "1.15.2"
 
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
+        sound_click()
+        DisableAll()
 
-        TextBox1.ReadOnly = False
-        Button2.Enabled = True
-        Button1.Enabled = False
-        ComboBox1.Enabled = False
-        ComboBox2.Enabled = False
-
-        If (ComboBox1.Text = "") Then
-
-            MsgBox("Choose a version of minecraft server", MsgBoxStyle.Information)
-            TextBox1.ReadOnly = True
-            TextBox1.Clear()
-            Button2.Enabled = False
-            Button1.Enabled = True
-            ComboBox1.Enabled = True
-            ComboBox2.Enabled = True
-            Exit Sub
-
-        End If
-
-        If (ComboBox2.Text = "") Then
-
-            MsgBox("Choose a Allocation memory for the server", MsgBoxStyle.Information)
-            TextBox1.ReadOnly = True
-            TextBox1.Clear()
-            Button2.Enabled = False
-            Button1.Enabled = True
-            ComboBox1.Enabled = True
-            ComboBox2.Enabled = True
-            Exit Sub
-
-        End If
-
-        If (File.Exists(ComboBox1.Text & "/minecraft_server." & ComboBox1.Text & ".jar")) Then
+        If (File.Exists(ComboBox2.Text & "/minecraft_server." & ComboBox2.Text & ".jar")) Then
 
             launchServer()
 
@@ -285,66 +232,30 @@ Public Class FormEasyMineServer
 
     End Sub
 
-    Public Sub downloadServer()
-
-        Try
-
-            Timer3.Start()
-
-            If (IO.Directory.Exists(ComboBox1.Text)) Then
-
-
-
-            Else
-
-                IO.Directory.Exists(ComboBox1.Text)
-
-                IO.Directory.CreateDirectory(ComboBox1.Text)
-
-            End If
-
-            DownloadFile.DownloadFileAsync(New Uri(vServerMinecraft), ComboBox1.Text & "/minecraft_server." & ComboBox1.Text & ".jar")
-
-        Catch ex As Exception
-
-            MsgBox("Error with the download LINK !")
-
-            TextBox1.ReadOnly = True
-            TextBox1.Clear()
-            Button2.Enabled = False
-            Button1.Enabled = True
-            ComboBox1.Enabled = True
-            ComboBox2.Enabled = True
-
-        End Try
-
-    End Sub
-
     Public Sub launchServer()
 
-        If (File.Exists(ComboBox1.Text & "/minecraft_server." & ComboBox1.Text & ".jar")) Then
+        If (File.Exists(ComboBox2.Text & "/minecraft_server." & ComboBox2.Text & ".jar")) Then
 
-            If (File.Exists(ComboBox1.Text & "/eula.txt")) Then
+            If (File.Exists(ComboBox2.Text & "/eula.txt")) Then
 
-                Dim cc As New StreamReader(ComboBox1.Text & "/eula.txt")
+                Dim cc As New StreamReader(ComboBox2.Text & "/eula.txt")
 
                 If (cc.ReadToEnd = "eula=true" = False) Then
 
                     cc.Close()
-                    File.WriteAllText(ComboBox1.Text & "/eula.txt", "eula=true")
-
+                    File.WriteAllText(ComboBox2.Text & "/eula.txt", "eula=true")
                 End If
 
             Else
 
-                File.WriteAllText(ComboBox1.Text & "/eula.txt", "eula=true")
+                File.WriteAllText(ComboBox2.Text & "/eula.txt", "eula=true")
 
             End If
 
 
 
 
-            Dim thisserv As New FileInfo(ComboBox1.Text & "/minecraft_server." & ComboBox1.Text & ".jar")
+            Dim thisserv As New FileInfo(ComboBox2.Text & "/minecraft_server." & ComboBox2.Text & ".jar")
 
             p.StartInfo.CreateNoWindow = True
             p.StartInfo.UseShellExecute = False
@@ -352,10 +263,11 @@ Public Class FormEasyMineServer
             p.StartInfo.RedirectStandardOutput = True
             p.StartInfo.RedirectStandardError = True
             p.StartInfo.FileName = "cmd"
-            p.StartInfo.Arguments = "/c @echo off & title SERVEUR MINECRAFT & cd " & thisserv.DirectoryName & " & java -Xms1024M -Xmx" & ComboBox2.Text & "M -jar " & "minecraft_server." & ComboBox1.Text & ".jar" & " nogui"
+            p.StartInfo.Arguments = "/c @echo off & title SERVEUR MINECRAFT & cd " & thisserv.DirectoryName & " & java -Xms1024M -Xmx" & ComboBox1.Text & "M -jar " & "minecraft_server." & ComboBox2.Text & ".jar" & " nogui"
 
             p.Start()
             Timer2.Start()
+            RichTextBox1.Text = "Le serveur se lance ! Merci de patienter." & vbCrLf
 
         Else
 
@@ -366,8 +278,8 @@ Public Class FormEasyMineServer
                 TextBox1.Clear()
                 Button2.Enabled = False
                 Button1.Enabled = True
-                ComboBox1.Enabled = True
                 ComboBox2.Enabled = True
+                ComboBox1.Enabled = True
 
             End If
 
@@ -395,7 +307,7 @@ Public Class FormEasyMineServer
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
+        sound_click()
 
         Try
 
@@ -421,8 +333,8 @@ Public Class FormEasyMineServer
             code = ""
 
             Button1.Enabled = True
-            ComboBox1.Enabled = True
             ComboBox2.Enabled = True
+            ComboBox1.Enabled = True
 
         End If
 
@@ -437,8 +349,8 @@ Public Class FormEasyMineServer
             code = ""
 
             Button1.Enabled = True
-            ComboBox1.Enabled = True
             ComboBox2.Enabled = True
+            ComboBox1.Enabled = True
 
         End If
 
@@ -480,13 +392,13 @@ Public Class FormEasyMineServer
 
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
 
         Try
 
             Dim ClsINIcombobox As New ClsINI(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
 
-            Dim A As String = ComboBox1.Text
+            Dim A As String = ComboBox2.Text
             vServerMinecraft = ClsINIcombobox.GetString("DOWNLOADSERVERLIST", A, "")
 
         Catch ex As Exception
@@ -562,7 +474,7 @@ Public Class FormEasyMineServer
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
-        My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
+        sound_click()
         SETTINGS.Show()
         Me.Hide()
 
@@ -570,9 +482,8 @@ Public Class FormEasyMineServer
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
-
-        MsgBox("Not available for moment", MsgBoxStyle.Information)
+        sound_click()
+        Process.Start("https://github.com/XsplitS/EASYMINESERVER/issues")
 
     End Sub
 
@@ -600,9 +511,16 @@ Public Class FormEasyMineServer
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 
-        My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
-        SProperties.Show()
-        Me.Hide()
+        sound_click()
+        Try
+
+            Process.Start(ComboBox2.Text & "\server.properties")
+
+        Catch ex As Exception
+
+            MsgBox("Fichier non trouvé, Installer et lancer le serveur en priorité.", MsgBoxStyle.Exclamation)
+
+        End Try
 
     End Sub
 

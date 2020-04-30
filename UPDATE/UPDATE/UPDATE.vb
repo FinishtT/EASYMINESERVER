@@ -6,6 +6,8 @@ Imports System.Threading
 
 Public Class UPDATE
 
+    Dim maj As String = "1.8.2"
+
     Public Locationappdataroaming1 As String = Path.GetTempPath
     Public WithEvents download As New WebClient
 
@@ -40,7 +42,7 @@ Public Class UPDATE
         Try
 
 
-            If (download.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf") = "1.8") Then 'file.txt,file.ini,etc...'
+            If (download.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf").Remove(5, 1) = maj) Then 'file.txt,file.ini,etc...'
 
                 Close()
 

@@ -104,11 +104,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="My Project\Resources.Designer.vb">
+    <Compile Include="My Project\Resources1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\MOthers.vb" />
     <Compile Include="SPLASH.Designer.vb">
       <DependentUpon>SPLASH.vb</DependentUpon>
     </Compile>
@@ -150,7 +151,8 @@
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SPLASH.resx">
       <DependentUpon>SPLASH.vb</DependentUpon>
