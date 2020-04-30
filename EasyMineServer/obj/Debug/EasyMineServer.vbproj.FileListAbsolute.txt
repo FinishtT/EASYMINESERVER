@@ -44,3 +44,16 @@ G:\Projects Visual Studio\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer
 G:\Projects Visual Studio\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.FormEasyMineServer.resources
 G:\Projects Visual Studio\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.vbproj.GenerateResource.Cache
 G:\Projects Visual Studio\EasyMineServer\EasyMineServer\obj\Debug\EasyMineServer.Resources.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Debug\EasyMineServer.exe.config
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.exe
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.xml
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.pdb
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Debug\EasyMineServer.exe
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Debug\EasyMineServer.pdb
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Debug\EasyMineServer.xml
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.Resources.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.SPLASH.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.SProperties.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.SETTINGS.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.FormEasyMineServer.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Debug\EasyMineServer.vbproj.GenerateResource.Cache

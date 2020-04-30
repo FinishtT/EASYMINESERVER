@@ -28,3 +28,13 @@ D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDA
 D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.exe
 D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.xml
 D:\Users\Administrator\Documents\Visual Studio 2013\Projects\EasyMineServer\UPDATE\UPDATE\obj\Debug\UPDATE.pdb
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Debug\UPDATE.exe.config
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Debug\UPDATE.exe
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Debug\UPDATE.pdb
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Debug\UPDATE.xml
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Debug\UPDATE.UPDATE.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Debug\UPDATE.Resources.resources
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Debug\UPDATE.vbproj.GenerateResource.Cache
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Debug\UPDATE.exe
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Debug\UPDATE.xml
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Debug\UPDATE.pdb
