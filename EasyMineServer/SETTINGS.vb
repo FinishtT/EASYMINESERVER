@@ -4,7 +4,7 @@ Public Class SETTINGS
 
     Private Sub SETTINGS_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
-        My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
+        sound_click()
         FormEasyMineServer.Show()
         Me.Hide()
         e.Cancel = True
@@ -15,13 +15,13 @@ Public Class SETTINGS
 
         If (CheckBox1.Checked = True) Then
 
-            My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
-            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Sound = False", "Sound = True"))
+            sound_click()
+            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Sound = True", "Sound = False"))
 
         Else
 
-            My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
-            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Sound = True", "Sound = False"))
+            sound_click()
+            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Sound = False", "Sound = True"))
 
         End If
 
@@ -31,7 +31,7 @@ Public Class SETTINGS
 
         If (CheckBox3.Checked = True) Then
 
-            My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
+            sound_click()
             File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Procd = False", "Procd = True"))
 
             FormEasyMineServer.Label1.Visible = True
@@ -39,7 +39,7 @@ Public Class SETTINGS
 
         Else
 
-            My.Computer.Audio.Play(My.Resources.Button, AudioPlayMode.Background)
+            sound_click()
             File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Procd = True", "Procd = False"))
 
             FormEasyMineServer.Label1.Visible = False
@@ -49,7 +49,4 @@ Public Class SETTINGS
 
     End Sub
 
-    Private Sub SETTINGS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

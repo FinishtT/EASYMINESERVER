@@ -97,8 +97,8 @@ Public Class FormEasyMineServer
             Try
 
 
-                Dim aa As String = File.ReadAllLines("Config.conf").ElementAt(1).ToString
-                Dim ff As String = File.ReadAllLines("Config.conf").ElementAt(0).ToString
+                Dim aa As String = File.ReadAllLines("Config.conf").ElementAt(0).ToString
+                Dim ff As String = File.ReadAllLines("Config.conf").ElementAt(1).ToString
 
                 If (aa = "Procd = False") Then
 
@@ -120,12 +120,14 @@ Public Class FormEasyMineServer
 
                     File.Delete("Config.conf")
 
-                    File.WriteAllText("Config.conf", "Sound = True" & vbCrLf & "Procd = True")
+                    File.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True")
 
                     SETTINGS.CheckBox1.Checked = False
                     SETTINGS.CheckBox3.Checked = False
 
                 End If
+
+
 
                 If (ff = "Sound = False") Then
 
@@ -141,12 +143,13 @@ Public Class FormEasyMineServer
 
                     File.Delete("Config.conf")
 
-                    File.WriteAllText("Config.conf", "Sound = True" & vbCrLf & "Procd = True")
+                    File.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True")
 
                     SETTINGS.CheckBox1.Checked = False
                     SETTINGS.CheckBox3.Checked = False
 
                 End If
+
 
             Catch ex As Exception
 
@@ -154,7 +157,7 @@ Public Class FormEasyMineServer
 
                 File.Delete("Config.conf")
 
-                File.WriteAllText("Config.conf", "Sound = True" & vbCrLf & "Procd = True")
+                File.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True")
 
                 SETTINGS.CheckBox1.Checked = False
                 SETTINGS.CheckBox3.Checked = False
@@ -164,7 +167,7 @@ Public Class FormEasyMineServer
 
         Else
 
-            My.Computer.FileSystem.WriteAllText("Config.conf", "Sound = True" & vbCrLf & "Procd = True", True)
+            My.Computer.FileSystem.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True", True)
 
         End If
 
@@ -450,11 +453,11 @@ Public Class FormEasyMineServer
 
                 If (SETTINGS.CheckBox1.Checked = True) Then
 
-
+                    My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
 
                 Else
 
-                    My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
+
 
                 End If
 
