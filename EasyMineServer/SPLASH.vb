@@ -7,16 +7,8 @@ Public Class SPLASH
 
     Private Sub SPLASH_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        download.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
-        download.Headers.Clear()
 
-        Try
-
-            Label3.Text = "V" & download.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf")
-
-        Catch ex As Exception
-
-        End Try
+        Label3.Text = "V" & FormEasyMineServer.maj
 
         Timer1.Start()
 

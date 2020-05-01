@@ -7,12 +7,13 @@ Public Class FormEasyMineServer
     Public Locationappdataroaming1 As String = Path.GetTempPath.ToString
     Public WithEvents DownloadFile As New WebClient
     Dim cpu As New PerformanceCounter("Processor information", "% processor time", "_Total")
-    Dim p As New Process()
+    Public Shared p As New Process()
     Dim code As String
     Dim k As String
     Dim LocationAppdata As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
     Public Shared vServerMinecraft As String
-    Dim maj As String = "1.8.2"
+    Public Shared maj As String = "1.8.3"
+    Public Shared INIFILE As New clsIni(Environment.CurrentDirectory & "\config.ini")
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
@@ -46,7 +47,7 @@ Public Class FormEasyMineServer
             Else
 
                 Try
-                    Dim msgyesno As Integer = MsgBox("Une mise à jour est disponible, voulez-vous la démarrer ?", MsgBoxStyle.YesNo + MsgBoxStyle.Information)
+                    Dim msgyesno As Integer = MsgBox("Update available, Do you want to launch it ?", MsgBoxStyle.YesNo + MsgBoxStyle.Information)
 
                     If (msgyesno = vbYes) Then
 
@@ -66,7 +67,7 @@ Public Class FormEasyMineServer
 
         Catch ex As Exception
 
-            MsgBox(ex.Message & " No connection ?, Vous passer en mode hors ligne.", MsgBoxStyle.Information)
+            MsgBox(ex.Message & " No connection ?, You switch in offline mode.", MsgBoxStyle.Information)
 
         End Try
 
@@ -88,76 +89,53 @@ Public Class FormEasyMineServer
 
         Catch ex As Exception
 
-            Label3.Text = "Ip publique : ??"
+            Label3.Text = "Public ip: ??"
 
         End Try
 
-        If (My.Computer.FileSystem.FileExists("Config.conf")) Then
+        If (My.Computer.FileSystem.FileExists("config.ini")) Then
 
             Try
 
+                Dim INIREAD01 As String = INIFILE.GetString("CONFIG", "PROCD", "").ToString
+                Dim INIREAD02 As String = INIFILE.GetString("CONFIG", "SOUNDALERT", "").ToString
 
-                Dim aa As String = File.ReadAllLines("Config.conf").ElementAt(0).ToString
-                Dim ff As String = File.ReadAllLines("Config.conf").ElementAt(1).ToString
 
-                If (aa = "Procd = False") Then
+
+                If (INIREAD01 = "FALSE") Then
 
                     SETTINGS.CheckBox3.Checked = False
 
                     Label1.Visible = False
                     Timer1.Stop()
 
-                ElseIf (aa = "Procd = True") Then
+                ElseIf (INIREAD01 = "TRUE") Then
 
                     SETTINGS.CheckBox3.Checked = True
 
                     Label1.Visible = True
                     Timer1.Start()
 
-                Else
-
-                    MsgBox("Le fichier 'CONFIG.CONF' est endommagé !", MsgBoxStyle.Exclamation)
-
-                    File.Delete("Config.conf")
-
-                    File.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True")
-
-                    SETTINGS.CheckBox1.Checked = False
-                    SETTINGS.CheckBox3.Checked = False
-
                 End If
 
-
-
-                If (ff = "Sound = False") Then
+                If (INIREAD02 = "FALSE") Then
 
                     SETTINGS.CheckBox1.Checked = False
 
-                ElseIf (ff = "Sound = True") Then
+                ElseIf (INIREAD02 = True) Then
 
                     SETTINGS.CheckBox1.Checked = True
-
-                Else
-
-                    MsgBox("Le fichier 'CONFIG.CONF' est endommagé !", MsgBoxStyle.Exclamation)
-
-                    File.Delete("Config.conf")
-
-                    File.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True")
-
-                    SETTINGS.CheckBox1.Checked = False
-                    SETTINGS.CheckBox3.Checked = False
 
                 End If
 
 
             Catch ex As Exception
 
-                MsgBox("Le fichier 'CONFIG.CONF' est endommagé !", MsgBoxStyle.Exclamation)
+                MsgBox("Le fichier 'CONFIG.INI' est endommagé !", MsgBoxStyle.Exclamation)
 
-                File.Delete("Config.conf")
+                File.Delete("config.ini")
 
-                File.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True")
+                File.WriteAllText("config.ini", My.Resources.Config)
 
                 SETTINGS.CheckBox1.Checked = False
                 SETTINGS.CheckBox3.Checked = False
@@ -167,27 +145,17 @@ Public Class FormEasyMineServer
 
         Else
 
-            My.Computer.FileSystem.WriteAllText("Config.conf", "Procd = True" & vbCrLf & "Sound = True", True)
+            File.WriteAllText("config.ini", My.Resources.Config)
 
         End If
 
-        If (File.Exists("server.properties")) Then
+        Directory.CreateDirectory(LocationAppdata & "\EASYMINESERVER\CONFIG")
 
-
-
-        Else
-
-            File.WriteAllBytes("server.properties", My.Resources.server)
-
-        End If
-
-        System.IO.Directory.CreateDirectory(LocationAppdata & "\EASYMINESERVER\CONFIG")
-
-        System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
-
-        Dim readVersion As StreamReader = New StreamReader(DownloadFile.OpenRead("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VersionSM.txt"))
+        Control.CheckForIllegalCrossThreadCalls = False
 
         Try
+
+            Dim readVersion As StreamReader = New StreamReader(DownloadFile.OpenRead("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VersionSM.txt"))
 
             While Not readVersion.EndOfStream
 
@@ -203,8 +171,8 @@ Public Class FormEasyMineServer
 
         Catch ex As Exception
 
-            MsgBox("Problem with your connection ?")
-            Close()
+            MsgBox("Problem with your connection ?", MsgBoxStyle.Exclamation)
+            ComboBox2.DropDownStyle = ComboBoxStyle.DropDown
 
         End Try
 
@@ -235,58 +203,11 @@ Public Class FormEasyMineServer
 
     End Sub
 
-    Public Sub launchServer()
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
 
-        If (File.Exists(ComboBox2.Text & "/minecraft_server." & ComboBox2.Text & ".jar")) Then
-
-            If (File.Exists(ComboBox2.Text & "/eula.txt")) Then
-
-                Dim cc As New StreamReader(ComboBox2.Text & "/eula.txt")
-
-                If (cc.ReadToEnd = "eula=true" = False) Then
-
-                    cc.Close()
-                    File.WriteAllText(ComboBox2.Text & "/eula.txt", "eula=true")
-                End If
-
-            Else
-
-                File.WriteAllText(ComboBox2.Text & "/eula.txt", "eula=true")
-
-            End If
-
-
-
-
-            Dim thisserv As New FileInfo(ComboBox2.Text & "/minecraft_server." & ComboBox2.Text & ".jar")
-
-            p.StartInfo.CreateNoWindow = True
-            p.StartInfo.UseShellExecute = False
-            p.StartInfo.RedirectStandardInput = True
-            p.StartInfo.RedirectStandardOutput = True
-            p.StartInfo.RedirectStandardError = True
-            p.StartInfo.FileName = "cmd"
-            p.StartInfo.Arguments = "/c @echo off & title SERVEUR MINECRAFT & cd " & thisserv.DirectoryName & " & java -Xms1024M -Xmx" & ComboBox1.Text & "M -jar " & "minecraft_server." & ComboBox2.Text & ".jar" & " nogui"
-
-            p.Start()
-            Timer2.Start()
-            RichTextBox1.Text = "Le serveur se lance ! Merci de patienter." & vbCrLf
-
-        Else
-
-            If (vServerMinecraft = "") Then
-
-                MsgBox("the server is not selected")
-                TextBox1.ReadOnly = True
-                TextBox1.Clear()
-                Button2.Enabled = False
-                Button1.Enabled = True
-                ComboBox2.Enabled = True
-                ComboBox1.Enabled = True
-
-            End If
-
-        End If
+        sound_click()
+        About.Show()
+        Me.Hide()
 
     End Sub
 
@@ -380,10 +301,14 @@ Public Class FormEasyMineServer
 
         Try
 
+
             p.StandardInput.WriteLine("stop")
             p.StandardInput.WriteLine("/stop")
             p.Kill()
             p.Close()
+
+            Dim ServerClose As Process() = Process.GetProcessesByName("java")
+            Array.ForEach(ServerClose, Sub(p As Process) p.Kill())
 
             Button2.Enabled = False
             TextBox1.ReadOnly = True
@@ -521,7 +446,7 @@ Public Class FormEasyMineServer
 
         Catch ex As Exception
 
-            MsgBox("Fichier non trouvé, Installer et lancer le serveur en priorité.", MsgBoxStyle.Exclamation)
+            MsgBox("File not found, Install and launch first the server.", MsgBoxStyle.Exclamation)
 
         End Try
 

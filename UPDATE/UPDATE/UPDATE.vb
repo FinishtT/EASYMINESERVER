@@ -6,7 +6,7 @@ Imports System.Threading
 
 Public Class UPDATE
 
-    Dim maj As String = "1.8.2"
+    Dim maj As String = "1.8.3"
 
     Public Locationappdataroaming1 As String = Path.GetTempPath
     Public WithEvents download As New WebClient

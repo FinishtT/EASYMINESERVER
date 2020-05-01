@@ -54,7 +54,6 @@ Public Class SProperties
 
         Else
 
-            File.WriteAllBytes("server.properties", My.Resources.server)
 
             Refresh()
 

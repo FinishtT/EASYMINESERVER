@@ -62,7 +62,7 @@ Partial Class FormEasyMineServer
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(535, 32)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Lancer le serveur"
+        Me.Button1.Text = "Launch the server"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'RichTextBox1
@@ -137,7 +137,7 @@ Partial Class FormEasyMineServer
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 36)
         Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Envoyer"
+        Me.Button2.Text = "Send"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Timer2
@@ -179,9 +179,9 @@ Partial Class FormEasyMineServer
         Me.Label2.Location = New System.Drawing.Point(12, 403)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 16)
+        Me.Label2.Size = New System.Drawing.Size(81, 16)
         Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Ip locale :"
+        Me.Label2.Text = "Local ip:"
         '
         'Label3
         '
@@ -192,9 +192,9 @@ Partial Class FormEasyMineServer
         Me.Label3.Location = New System.Drawing.Point(12, 428)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 16)
+        Me.Label3.Size = New System.Drawing.Size(87, 16)
         Me.Label3.TabIndex = 11
-        Me.Label3.Text = "Ip publique :"
+        Me.Label3.Text = "Public ip:"
         '
         'Button4
         '
@@ -226,7 +226,7 @@ Partial Class FormEasyMineServer
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(125, 428)
+        Me.Label4.Location = New System.Drawing.Point(100, 428)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 16)
@@ -239,7 +239,7 @@ Partial Class FormEasyMineServer
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(101, 403)
+        Me.Label5.Location = New System.Drawing.Point(100, 403)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(48, 16)
@@ -287,7 +287,6 @@ Partial Class FormEasyMineServer
         Me.Button6.BackColor = System.Drawing.Color.Transparent
         Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.Enabled = False
         Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.Button6.FlatAppearance.BorderSize = 2
         Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
@@ -300,7 +299,7 @@ Partial Class FormEasyMineServer
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(535, 32)
         Me.Button6.TabIndex = 18
-        Me.Button6.Text = "A propos"
+        Me.Button6.Text = "About"
         Me.Button6.UseVisualStyleBackColor = False
         '
         'FormEasyMineServer

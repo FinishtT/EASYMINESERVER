@@ -79,12 +79,14 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Byte[].
+        '''  Looks up a localized string similar to [CONFIG]
+        '''
+        '''PROCD = TRUE
+        '''SOUNDALERT = FALSE.
         '''</summary>
-        Friend ReadOnly Property server() As Byte()
+        Friend ReadOnly Property Config() As String
             Get
-                Dim obj As Object = ResourceManager.GetObject("server", resourceCulture)
-                Return CType(obj,Byte())
+                Return ResourceManager.GetString("Config", resourceCulture)
             End Get
         End Property
     End Module

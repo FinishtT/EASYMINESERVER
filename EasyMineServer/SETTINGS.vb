@@ -16,12 +16,12 @@ Public Class SETTINGS
         If (CheckBox1.Checked = True) Then
 
             sound_click()
-            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Sound = True", "Sound = False"))
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "SOUNDALERT", "TRUE")
 
         Else
 
             sound_click()
-            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Sound = False", "Sound = True"))
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "SOUNDALERT", "FALSE")
 
         End If
 
@@ -32,7 +32,7 @@ Public Class SETTINGS
         If (CheckBox3.Checked = True) Then
 
             sound_click()
-            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Procd = False", "Procd = True"))
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "PROCD", "TRUE")
 
             FormEasyMineServer.Label1.Visible = True
             FormEasyMineServer.Timer1.Start()
@@ -40,7 +40,7 @@ Public Class SETTINGS
         Else
 
             sound_click()
-            File.WriteAllText("Config.conf", File.ReadAllText("Config.conf").Replace("Procd = True", "Procd = False"))
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "PROCD", "FALSE")
 
             FormEasyMineServer.Label1.Visible = False
             FormEasyMineServer.Timer1.Stop()

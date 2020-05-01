@@ -56,7 +56,6 @@ C:\Users\Administrator\Desktop\EASYMINESERVER\EasyMineServer\obj\Release\EasyMin
 C:\Users\Administrator\Desktop\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.SETTINGS.resources
 C:\Users\Administrator\Desktop\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.FormEasyMineServer.resources
 C:\Users\Administrator\Desktop\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbproj.GenerateResource.Cache
-G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\EasyMineServer.exe.config
 G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.exe
 G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.xml
 G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.pdb
@@ -70,3 +69,4 @@ G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Relea
 G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.SETTINGS.resources
 G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.FormEasyMineServer.resources
 G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbproj.GenerateResource.Cache
+G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.About.resources
