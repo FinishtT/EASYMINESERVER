@@ -23,6 +23,7 @@ Public Class FormEasyMineServer
 
     End Sub
 
+    <Obsolete>
     Private Sub FormEasyMineServer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'JAVA VERIFICATION'
@@ -84,7 +85,7 @@ Public Class FormEasyMineServer
 
         Try
 
-            Label5.Text = Dns.GetHostByName(Dns.GetHostName).AddressList(0).ToString()
+            Label5.Text = Dns.GetHostByName(Dns.GetHostName).AddressList(0).ToString
             Label4.Text = DownloadFile.DownloadString("https://api.ipify.org/")
 
         Catch ex As Exception
@@ -324,7 +325,7 @@ Public Class FormEasyMineServer
 
         Try
 
-            Dim ClsINIcombobox As New ClsINI(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
+            Dim ClsINIcombobox As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
 
             Dim A As String = ComboBox2.Text
             vServerMinecraft = ClsINIcombobox.GetString("DOWNLOADSERVERLIST", A, "")
