@@ -15,7 +15,7 @@ Public Class FormEasyMineServer
     Public Shared vServerMinecraft As String
     Public Shared INIFILE As New clsIni(Environment.CurrentDirectory & "\config.ini")
     Public Conflink As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
-    Public Shared maj As String = "1.9"
+    Public Shared maj As String = "1.9.1"
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
