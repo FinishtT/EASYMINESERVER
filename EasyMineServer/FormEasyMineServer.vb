@@ -308,7 +308,11 @@ Public Class FormEasyMineServer
 
                 Label1.ForeColor = Color.Red
 
-                My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
+                If (INIFILE.GetString("CONFIG", "SOUNDALERT", "") = True) Then
+
+                    My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
+
+                End If
 
             Else
 

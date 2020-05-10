@@ -115,4 +115,5 @@ Public Class SETTINGS
         Label4.Text = RAM_S
 
     End Sub
+
 End Class
