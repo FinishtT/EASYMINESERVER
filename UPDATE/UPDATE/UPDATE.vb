@@ -1,12 +1,9 @@
 ﻿Imports System.IO
-
 Imports System.Net
-
-Imports System.Threading
 
 Public Class UPDATE
 
-    Dim maj As String = "1.9.1"
+    Dim maj As String = "1.9.2"
 
     Public Locationappdataroaming1 As String = Path.GetTempPath
     Public WithEvents download As New WebClient
@@ -23,6 +20,12 @@ Public Class UPDATE
     Private Sub RéduireButton_MouseLeave(sender As Object, e As EventArgs) Handles RéduireButton.MouseLeave
 
         RéduireButton.Image = My.Resources.Hide_default
+
+    End Sub
+
+    Private Sub RéduireButton_Click(sender As Object, e As EventArgs) Handles RéduireButton.Click
+
+        WindowState = FormWindowState.Minimized
 
     End Sub
 
@@ -49,6 +52,7 @@ Public Class UPDATE
             Else
 
                 Deletefile()
+                Downloadfile()
 
             End If
 
@@ -57,7 +61,7 @@ Public Class UPDATE
         Catch ex As Exception
 
             MsgBox(ex.Message)
-            Close()
+            Application.Exit()
 
         End Try
 
@@ -75,18 +79,13 @@ Public Class UPDATE
 
             ProgressBar.Value = 30
 
-
             File.Delete("EasyMineServer.exe")
 
             ProgressBar.Value = 100
 
-            Downloadfile()
-
         Else
 
             ProgressBar.Value = 100
-
-            Downloadfile()
 
         End If
 
@@ -95,8 +94,6 @@ Public Class UPDATE
     Private Async Sub Downloadfile()
 
         ProgressBar.Value = 0
-
-        NotesLabel.Text = "Téléchargement des fichiers en cours"
 
         If (Directory.Exists(Locationappdataroaming1 & "\Download")) Then
 
@@ -108,8 +105,7 @@ Public Class UPDATE
 
         End If
 
-        Await (Task.Delay(1000))
-
+        Await (Task.Delay(2000))
 
         Try
 
@@ -118,6 +114,7 @@ Public Class UPDATE
         Catch ex As Exception
 
             MsgBox(ex.Message)
+            Application.Exit()
 
         End Try
 
@@ -126,12 +123,13 @@ Public Class UPDATE
     Private Async Sub download_DownloadProgressChanged(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles download.DownloadProgressChanged
 
         ProgressBar.Value = e.ProgressPercentage
+        NotesLabel.Text = "Téléchargement des fichiers en cours (EASYMINESERVER.exe)" & e.ProgressPercentage & "%"
 
         If (ProgressBar.Value = 100) Then
 
+            Await Task.Delay(2000)
+
             Try
-
-
 
                 If (File.Exists(Locationappdataroaming1 & "\Download\UPDATE.exe")) Then
 
@@ -139,34 +137,34 @@ Public Class UPDATE
 
                 Else
 
-                    Await Task.Delay(1000)
+                    NotesLabel.Text = "Téléchargement des fichiers en cours (UPDATE.exe)" & e.ProgressPercentage & "%"
+
+                    Await Task.Delay(2000)
 
                     ProgressBar.Value = 0
 
                     download.DownloadFileAsync(New Uri("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/SOFTWARES/UPDATE.exe"), Locationappdataroaming1 & "\Download\UPDATE.exe")
 
-                    Exit Sub
-
                 End If
 
-                MsgBox("Le logiciel a terminé de télécharger les fichiers.")
+                NotesLabel.Text = "Copie des fichiers en cours"
 
                 File.Copy(Locationappdataroaming1 & "\Download\EasyMineServer.exe", "EasyMineServer.exe", True)
 
+                Await Task.Delay(3000)
+
+                NotesLabel.Text = "Lancement de l'application EASYMINESERVER.exe"
+
+                Await Task.Delay(2000)
+
                 Process.Start("EasyMineServer.exe")
 
-                Close()
+                Application.Exit()
 
             Catch ex As Exception
 
             End Try
 
         End If
-    End Sub
-
-    Private Sub RéduireButton_Click(sender As Object, e As EventArgs) Handles RéduireButton.Click
-
-        WindowState = FormWindowState.Minimized
-
     End Sub
 End Class

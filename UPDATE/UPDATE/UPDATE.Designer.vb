@@ -35,10 +35,10 @@ Partial Class UPDATE
 		'
 		Me.ProgressBar.BackColor = System.Drawing.Color.Green
 		Me.ProgressBar.ForeColor = System.Drawing.Color.Black
-		Me.ProgressBar.Location = New System.Drawing.Point(-5, -2)
+		Me.ProgressBar.Location = New System.Drawing.Point(-6, -2)
 		Me.ProgressBar.Name = "ProgressBar"
 		Me.ProgressBar.RightToLeft = System.Windows.Forms.RightToLeft.No
-		Me.ProgressBar.Size = New System.Drawing.Size(530, 24)
+		Me.ProgressBar.Size = New System.Drawing.Size(682, 24)
 		Me.ProgressBar.Step = 1
 		Me.ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee
 		Me.ProgressBar.TabIndex = 0
@@ -47,13 +47,13 @@ Partial Class UPDATE
 		'
 		Me.NotesLabel.AutoSize = True
 		Me.NotesLabel.BackColor = System.Drawing.Color.Transparent
-		Me.NotesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.NotesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.NotesLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
 		Me.NotesLabel.Location = New System.Drawing.Point(4, 2)
 		Me.NotesLabel.Name = "NotesLabel"
-		Me.NotesLabel.Size = New System.Drawing.Size(169, 20)
+		Me.NotesLabel.Size = New System.Drawing.Size(222, 16)
 		Me.NotesLabel.TabIndex = 1
-		Me.NotesLabel.Text = "????????????????"
+		Me.NotesLabel.Text = "UPDATE - EASYMINESERVER"
 		'
 		'ProgressBarPanel
 		'
@@ -62,7 +62,7 @@ Partial Class UPDATE
 		Me.ProgressBarPanel.ForeColor = System.Drawing.Color.Black
 		Me.ProgressBarPanel.Location = New System.Drawing.Point(8, 28)
 		Me.ProgressBarPanel.Name = "ProgressBarPanel"
-		Me.ProgressBarPanel.Size = New System.Drawing.Size(520, 20)
+		Me.ProgressBarPanel.Size = New System.Drawing.Size(670, 20)
 		Me.ProgressBarPanel.TabIndex = 2
 		'
 		'BackgroundProgressBarPanel
@@ -71,7 +71,7 @@ Partial Class UPDATE
 		Me.BackgroundProgressBarPanel.ForeColor = System.Drawing.Color.DarkRed
 		Me.BackgroundProgressBarPanel.Location = New System.Drawing.Point(4, 25)
 		Me.BackgroundProgressBarPanel.Name = "BackgroundProgressBarPanel"
-		Me.BackgroundProgressBarPanel.Size = New System.Drawing.Size(528, 27)
+		Me.BackgroundProgressBarPanel.Size = New System.Drawing.Size(674, 27)
 		Me.BackgroundProgressBarPanel.TabIndex = 3
 		'
 		'RéduireButton
@@ -101,8 +101,7 @@ Partial Class UPDATE
 		Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
 		Me.BackColor = System.Drawing.SystemColors.ButtonFace
 		Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-		Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-		Me.ClientSize = New System.Drawing.Size(536, 63)
+		Me.ClientSize = New System.Drawing.Size(690, 63)
 		Me.Controls.Add(Me.RéduireButton)
 		Me.Controls.Add(Me.ProgressBarPanel)
 		Me.Controls.Add(Me.NotesLabel)

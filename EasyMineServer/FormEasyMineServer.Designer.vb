@@ -247,9 +247,9 @@ Partial Class FormEasyMineServer
 		Me.Label6.Location = New System.Drawing.Point(599, 9)
 		Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(87, 16)
+		Me.Label6.Size = New System.Drawing.Size(86, 16)
 		Me.Label6.TabIndex = 19
-		Me.Label6.Text = "RAM : 0%"
+		Me.Label6.Text = "MEM : 0%"
 		Me.Label6.Visible = False
 		'
 		'TimerMEM

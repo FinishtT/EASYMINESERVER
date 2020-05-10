@@ -121,6 +121,12 @@ Module MOthers
 
     End Sub
 
+    Public Sub clearcache()
+
+        FormEasyMineServer.DownloadFile.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
+        FormEasyMineServer.DownloadFile.Headers.Clear()
+
+    End Sub
 
     Public Sub checkconfigfile()
 

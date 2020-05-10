@@ -15,7 +15,7 @@ Public Class FormEasyMineServer
     Public Shared vServerMinecraft As String
     Public Shared INIFILE As New clsIni(Environment.CurrentDirectory & "\config.ini")
     Public Conflink As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
-    Public Shared maj As String = "1.9.1"
+    Public Shared maj As String = "1.9.2"
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
@@ -47,8 +47,7 @@ Public Class FormEasyMineServer
         End If
         'JAVA VERIFICATION'
 
-        DownloadFile.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
-        DownloadFile.Headers.Clear()
+        clearcache()
 
         'MAJ'
         Try
@@ -93,6 +92,8 @@ Public Class FormEasyMineServer
 
         End If
 
+
+        'GET IPV4 IN RAW'
         Try
 
             Label5.Text = Dns.GetHostByName(Dns.GetHostName).AddressList(0).ToString
@@ -103,6 +104,8 @@ Public Class FormEasyMineServer
             Label3.Text = "Public ip: ??"
 
         End Try
+        'GET IPV4 IN RAW'
+
 
         If (My.Computer.FileSystem.FileExists("config.ini")) Then
 
@@ -146,8 +149,7 @@ Public Class FormEasyMineServer
 
         End Try
 
-        DownloadFile.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
-        DownloadFile.Headers.Clear()
+        clearcache()
 
         sound_click()
 
