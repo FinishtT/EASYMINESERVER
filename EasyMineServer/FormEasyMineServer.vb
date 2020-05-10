@@ -10,16 +10,25 @@ Public Class FormEasyMineServer
     Public Shared p As New Process()
     Dim code As String
     Dim k As String
-    Dim LocationAppdata As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
+    Public LocationAppdata As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
     Public Shared vServerMinecraft As String
-    Public Shared maj As String = "1.8.3"
     Public Shared INIFILE As New clsIni(Environment.CurrentDirectory & "\config.ini")
+    Public Conflink As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
+    Public Shared maj As String = "1.9"
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
         k = e.ProgressPercentage.ToString & "%"
-        RichTextBox1.ForeColor = Color.Black
+        RichTextBox1.ForeColor = Color.White
         RichTextBox1.Text = (k & vbCr)
+
+        If (k = "100%") Then
+
+            startserver()
+            k = ""
+            RichTextBox1.AppendText(vbCrLf & "Download Finished")
+
+        End If
 
     End Sub
 
@@ -43,7 +52,7 @@ Public Class FormEasyMineServer
         'MAJ'
         Try
 
-            If (DownloadFile.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf").Remove(5, 1) = maj) Then
+            If (DownloadFile.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf").Remove(2, 1) = maj) Then
 
             Else
 
@@ -98,36 +107,7 @@ Public Class FormEasyMineServer
 
             Try
 
-                Dim INIREAD01 As String = INIFILE.GetString("CONFIG", "PROCD", "").ToString
-                Dim INIREAD02 As String = INIFILE.GetString("CONFIG", "SOUNDALERT", "").ToString
-
-
-
-                If (INIREAD01 = "FALSE") Then
-
-                    SETTINGS.CheckBox3.Checked = False
-
-                    Label1.Visible = False
-                    Timer1.Stop()
-
-                ElseIf (INIREAD01 = "TRUE") Then
-
-                    SETTINGS.CheckBox3.Checked = True
-
-                    Label1.Visible = True
-                    Timer1.Start()
-
-                End If
-
-                If (INIREAD02 = "FALSE") Then
-
-                    SETTINGS.CheckBox1.Checked = False
-
-                ElseIf (INIREAD02 = True) Then
-
-                    SETTINGS.CheckBox1.Checked = True
-
-                End If
+                checkconfigfile()
 
 
             Catch ex As Exception
@@ -138,8 +118,7 @@ Public Class FormEasyMineServer
 
                 File.WriteAllText("config.ini", My.Resources.Config)
 
-                SETTINGS.CheckBox1.Checked = False
-                SETTINGS.CheckBox3.Checked = False
+                checkconfigfile()
 
             End Try
 
@@ -147,6 +126,7 @@ Public Class FormEasyMineServer
         Else
 
             File.WriteAllText("config.ini", My.Resources.Config)
+            checkconfigfile()
 
         End If
 
@@ -155,35 +135,18 @@ Public Class FormEasyMineServer
         Control.CheckForIllegalCrossThreadCalls = False
 
         Try
-
-            Dim readVersion As StreamReader = New StreamReader(DownloadFile.OpenRead("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VersionSM.txt"))
-
-            While Not readVersion.EndOfStream
-
-                Dim sLine As String = readVersion.ReadLine
-                ComboBox2.Items.Add(sLine)
-
-            End While
-
-            readVersion.Close()
-
+            'Download files'
             DownloadFile.DownloadFile("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/ConfLink.ini", LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
-
+            DownloadFile.DownloadFile("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VersionSM.txt", LocationAppdata & "\EASYMINESERVER\CONFIG\VersionSM.txt")
 
         Catch ex As Exception
 
             MsgBox("Problem with your connection ?", MsgBoxStyle.Exclamation)
-            ComboBox2.DropDownStyle = ComboBoxStyle.DropDown
 
         End Try
 
-
-
         DownloadFile.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
         DownloadFile.Headers.Clear()
-
-        ComboBox1.Text = "1024"
-        ComboBox2.Text = "1.15.2"
 
     End Sub
 
@@ -192,7 +155,7 @@ Public Class FormEasyMineServer
         sound_click()
         DisableAll()
 
-        If (File.Exists(ComboBox2.Text & "/minecraft_server." & ComboBox2.Text & ".jar")) Then
+        If (File.Exists(VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")) Then
 
             launchServer()
 
@@ -258,8 +221,6 @@ Public Class FormEasyMineServer
             code = ""
 
             Button1.Enabled = True
-            ComboBox2.Enabled = True
-            ComboBox1.Enabled = True
 
         End If
 
@@ -274,8 +235,6 @@ Public Class FormEasyMineServer
             code = ""
 
             Button1.Enabled = True
-            ComboBox2.Enabled = True
-            ComboBox1.Enabled = True
 
         End If
 
@@ -321,34 +280,6 @@ Public Class FormEasyMineServer
 
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
-
-        Try
-
-            Dim ClsINIcombobox As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
-
-            Dim A As String = ComboBox2.Text
-            vServerMinecraft = ClsINIcombobox.GetString("DOWNLOADSERVERLIST", A, "")
-
-        Catch ex As Exception
-
-        End Try
-
-    End Sub
-
-    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-
-        If (k = "100%") Then
-
-            Timer3.Stop()
-            startserver()
-            k = ""
-            Timer3.Stop()
-
-        End If
-
-    End Sub
-
     Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
 
         If (e.KeyCode = Keys.Enter) Then
@@ -377,15 +308,7 @@ Public Class FormEasyMineServer
 
                 Label1.ForeColor = Color.Red
 
-                If (SETTINGS.CheckBox1.Checked = True) Then
-
-                    My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
-
-                Else
-
-
-
-                End If
+                My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
 
             Else
 
@@ -404,12 +327,13 @@ Public Class FormEasyMineServer
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
         sound_click()
+        SETTINGS.SETTINGS_Load()
         SETTINGS.Show()
         Me.Hide()
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
 
         sound_click()
         Process.Start("https://github.com/XsplitS/EASYMINESERVER/issues")
@@ -443,7 +367,7 @@ Public Class FormEasyMineServer
         sound_click()
         Try
 
-            Process.Start(ComboBox2.Text & "\server.properties")
+            Process.Start(VERSIONS_S & "\server.properties")
 
         Catch ex As Exception
 

@@ -76,7 +76,7 @@
     <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>MineCraft.ico</ApplicationIcon>
+    <ApplicationIcon>x32.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -122,12 +122,6 @@
     <Compile Include="SPLASH.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SProperties.Designer.vb">
-      <DependentUpon>SProperties.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SProperties.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="SETTINGS.Designer.vb">
       <DependentUpon>SETTINGS.vb</DependentUpon>
     </Compile>
@@ -145,6 +139,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -165,9 +160,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SPLASH.resx">
       <DependentUpon>SPLASH.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SProperties.resx">
-      <DependentUpon>SProperties.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SETTINGS.resx">
       <DependentUpon>SETTINGS.vb</DependentUpon>
@@ -215,7 +207,7 @@
     <None Include="Resources\Button.wav" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MineCraft.ico" />
+    <Content Include="x32.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

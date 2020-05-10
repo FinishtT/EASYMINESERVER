@@ -1,134 +1,220 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SETTINGS
-    Inherits System.Windows.Forms.Form
+	Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
-    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-        Try
-            If disposing AndAlso components IsNot Nothing Then
-                components.Dispose()
-            End If
-        Finally
-            MyBase.Dispose(disposing)
-        End Try
-    End Sub
+	'Form overrides dispose to clean up the component list.
+	<System.Diagnostics.DebuggerNonUserCode()>
+	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+		Try
+			If disposing AndAlso components IsNot Nothing Then
+				components.Dispose()
+			End If
+		Finally
+			MyBase.Dispose(disposing)
+		End Try
+	End Sub
 
-    'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+	'Required by the Windows Form Designer
+	Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
-    Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SETTINGS))
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.SuspendLayout()
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.CheckBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.DarkGray
-        Me.CheckBox1.Location = New System.Drawing.Point(90, 114)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(182, 20)
-        Me.CheckBox1.TabIndex = 13
-        Me.CheckBox1.TabStop = False
-        Me.CheckBox1.Text = "Active sound alert"
-        Me.CheckBox1.UseVisualStyleBackColor = False
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox3.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.CheckBox3.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.CheckBox3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox3.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.ForeColor = System.Drawing.Color.DarkGray
-        Me.CheckBox3.Location = New System.Drawing.Point(90, 63)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(163, 20)
-        Me.CheckBox3.TabIndex = 15
-        Me.CheckBox3.TabStop = False
-        Me.CheckBox3.Text = "Show Processor"
-        Me.CheckBox3.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Enabled = False
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.DarkGray
-        Me.Button1.Location = New System.Drawing.Point(157, 180)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(182, 26)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "Language: English"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.Enabled = False
-        Me.CheckBox2.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.CheckBox2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.ForeColor = System.Drawing.Color.DarkGray
-        Me.CheckBox2.Location = New System.Drawing.Point(90, 88)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(111, 20)
-        Me.CheckBox2.TabIndex = 18
-        Me.CheckBox2.TabStop = False
-        Me.CheckBox2.Text = "Show RAM"
-        Me.CheckBox2.UseVisualStyleBackColor = False
-        '
-        'SETTINGS
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.Color.Black
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(351, 218)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.White
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaximizeBox = False
-        Me.Name = "SETTINGS"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "EasyMineServer"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+	'NOTE: The following procedure is required by the Windows Form Designer
+	'It can be modified using the Windows Form Designer.  
+	'Do not modify it using the code editor.
+	<System.Diagnostics.DebuggerStepThrough()>
+	Private Sub InitializeComponent()
+		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SETTINGS))
+		Me.Button1 = New System.Windows.Forms.Button()
+		Me.Label1 = New System.Windows.Forms.Label()
+		Me.Label2 = New System.Windows.Forms.Label()
+		Me.Label3 = New System.Windows.Forms.Label()
+		Me.Label4 = New System.Windows.Forms.Label()
+		Me.Button2 = New System.Windows.Forms.Button()
+		Me.Button3 = New System.Windows.Forms.Button()
+		Me.Button4 = New System.Windows.Forms.Button()
+		Me.Button5 = New System.Windows.Forms.Button()
+		Me.Button6 = New System.Windows.Forms.Button()
+		Me.SuspendLayout()
+		'
+		'Button1
+		'
+		Me.Button1.BackColor = System.Drawing.Color.Transparent
+		Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button1.Enabled = False
+		Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+		Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button1.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button1.ForeColor = System.Drawing.Color.White
+		Me.Button1.Location = New System.Drawing.Point(86, 172)
+		Me.Button1.Name = "Button1"
+		Me.Button1.Size = New System.Drawing.Size(224, 26)
+		Me.Button1.TabIndex = 17
+		Me.Button1.Text = "Language: English"
+		Me.Button1.UseVisualStyleBackColor = False
+		'
+		'Label1
+		'
+		Me.Label1.AutoSize = True
+		Me.Label1.BackColor = System.Drawing.Color.Transparent
+		Me.Label1.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label1.ForeColor = System.Drawing.Color.White
+		Me.Label1.Location = New System.Drawing.Point(99, 112)
+		Me.Label1.Name = "Label1"
+		Me.Label1.Size = New System.Drawing.Size(78, 16)
+		Me.Label1.TabIndex = 22
+		Me.Label1.Text = "Version:"
+		'
+		'Label2
+		'
+		Me.Label2.AutoSize = True
+		Me.Label2.BackColor = System.Drawing.Color.Transparent
+		Me.Label2.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label2.ForeColor = System.Drawing.Color.White
+		Me.Label2.Location = New System.Drawing.Point(127, 144)
+		Me.Label2.Name = "Label2"
+		Me.Label2.Size = New System.Drawing.Size(50, 16)
+		Me.Label2.TabIndex = 24
+		Me.Label2.Text = "RAM:"
+		'
+		'Label3
+		'
+		Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.Label3.AutoSize = True
+		Me.Label3.BackColor = System.Drawing.Color.Transparent
+		Me.Label3.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label3.ForeColor = System.Drawing.Color.White
+		Me.Label3.Location = New System.Drawing.Point(176, 113)
+		Me.Label3.Name = "Label3"
+		Me.Label3.Size = New System.Drawing.Size(48, 16)
+		Me.Label3.TabIndex = 25
+		Me.Label3.Text = "????"
+		'
+		'Label4
+		'
+		Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.Label4.AutoSize = True
+		Me.Label4.BackColor = System.Drawing.Color.Transparent
+		Me.Label4.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Label4.ForeColor = System.Drawing.Color.White
+		Me.Label4.Location = New System.Drawing.Point(176, 145)
+		Me.Label4.Name = "Label4"
+		Me.Label4.Size = New System.Drawing.Size(48, 16)
+		Me.Label4.TabIndex = 26
+		Me.Label4.Text = "????"
+		'
+		'Button2
+		'
+		Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.Button2.BackColor = System.Drawing.Color.Transparent
+		Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button2.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button2.ForeColor = System.Drawing.Color.White
+		Me.Button2.Location = New System.Drawing.Point(236, 108)
+		Me.Button2.Name = "Button2"
+		Me.Button2.Size = New System.Drawing.Size(74, 26)
+		Me.Button2.TabIndex = 27
+		Me.Button2.Text = "MODIFY"
+		Me.Button2.UseVisualStyleBackColor = False
+		'
+		'Button3
+		'
+		Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+		Me.Button3.BackColor = System.Drawing.Color.Transparent
+		Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button3.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button3.ForeColor = System.Drawing.Color.White
+		Me.Button3.Location = New System.Drawing.Point(236, 140)
+		Me.Button3.Name = "Button3"
+		Me.Button3.Size = New System.Drawing.Size(74, 26)
+		Me.Button3.TabIndex = 28
+		Me.Button3.Text = "MODIFY"
+		Me.Button3.UseVisualStyleBackColor = False
+		'
+		'Button4
+		'
+		Me.Button4.BackColor = System.Drawing.Color.Transparent
+		Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button4.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button4.ForeColor = System.Drawing.Color.White
+		Me.Button4.Location = New System.Drawing.Point(86, 12)
+		Me.Button4.Name = "Button4"
+		Me.Button4.Size = New System.Drawing.Size(224, 26)
+		Me.Button4.TabIndex = 29
+		Me.Button4.Text = "SHOW PROCESSOR: OFF"
+		Me.Button4.UseVisualStyleBackColor = False
+		'
+		'Button5
+		'
+		Me.Button5.BackColor = System.Drawing.Color.Transparent
+		Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button5.Enabled = False
+		Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+		Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button5.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button5.ForeColor = System.Drawing.Color.White
+		Me.Button5.Location = New System.Drawing.Point(86, 44)
+		Me.Button5.Name = "Button5"
+		Me.Button5.Size = New System.Drawing.Size(224, 26)
+		Me.Button5.TabIndex = 30
+		Me.Button5.Text = "SHOW RAM: OFF"
+		Me.Button5.UseVisualStyleBackColor = False
+		'
+		'Button6
+		'
+		Me.Button6.BackColor = System.Drawing.Color.Transparent
+		Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.Button6.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button6.ForeColor = System.Drawing.Color.White
+		Me.Button6.Location = New System.Drawing.Point(86, 76)
+		Me.Button6.Name = "Button6"
+		Me.Button6.Size = New System.Drawing.Size(224, 26)
+		Me.Button6.TabIndex = 31
+		Me.Button6.Text = "ACTIVE SOUND ALERT: OFF"
+		Me.Button6.UseVisualStyleBackColor = False
+		'
+		'SETTINGS
+		'
+		Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+		Me.BackColor = System.Drawing.Color.Black
+		Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+		Me.ClientSize = New System.Drawing.Size(417, 218)
+		Me.Controls.Add(Me.Button6)
+		Me.Controls.Add(Me.Button5)
+		Me.Controls.Add(Me.Button4)
+		Me.Controls.Add(Me.Button3)
+		Me.Controls.Add(Me.Button2)
+		Me.Controls.Add(Me.Label4)
+		Me.Controls.Add(Me.Label3)
+		Me.Controls.Add(Me.Label2)
+		Me.Controls.Add(Me.Label1)
+		Me.Controls.Add(Me.Button1)
+		Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.ForeColor = System.Drawing.Color.Black
+		Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+		Me.Margin = New System.Windows.Forms.Padding(4)
+		Me.MaximizeBox = False
+		Me.Name = "SETTINGS"
+		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+		Me.Text = "EasyMineServer"
+		Me.ResumeLayout(False)
+		Me.PerformLayout()
 
-    End Sub
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-
+	End Sub
+	Friend WithEvents Button1 As System.Windows.Forms.Button
+	Friend WithEvents Label1 As Label
+	Friend WithEvents Label2 As Label
+	Friend WithEvents Label3 As Label
+	Friend WithEvents Label4 As Label
+	Friend WithEvents Button2 As Button
+	Friend WithEvents Button3 As Button
+	Friend WithEvents Button4 As Button
+	Friend WithEvents Button5 As Button
+	Friend WithEvents Button6 As Button
 End Class

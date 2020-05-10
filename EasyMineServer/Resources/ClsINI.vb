@@ -3,9 +3,9 @@
 
     Private Declare Ansi Function GetPrivateProfileString _
       Lib "kernel32.dll" Alias "GetPrivateProfileStringA" _
-      (ByVal lpApplicationName As String, _
-      ByVal lpKeyName As String, ByVal lpDefault As String, _
-      ByVal lpReturnedString As System.Text.StringBuilder, _
+      (ByVal lpApplicationName As String,
+      ByVal lpKeyName As String, ByVal lpDefault As String,
+      ByVal lpReturnedString As System.Text.StringBuilder,
       ByVal nSize As Integer, ByVal lpFileName As String) _
       As Integer
 
