@@ -125,8 +125,8 @@ Module MOthers
     Public Sub checkconfigfile()
 
         Dim INIREAD01 As String = FormEasyMineServer.INIFILE.GetString("CONFIG", "PROCD", "").ToString
-        Dim INIREAD02 As String = FormEasyMineServer.INIFILE.GetString("CONFIG", "SOUNDALERT", "").ToString
-
+        Dim INIREAD02 As String = FormEasyMineServer.INIFILE.GetString("CONFIG", "RAMD", "").ToString
+        Dim INIREAD03 As String = FormEasyMineServer.INIFILE.GetString("CONFIG", "SOUNDALERT", "").ToString
 
 
         If (INIREAD01 = "FALSE") Then
@@ -134,26 +134,43 @@ Module MOthers
             SETTINGS.Button4.Text = "SHOW PROCESSOR: OFF"
 
             FormEasyMineServer.Label1.Visible = False
-            FormEasyMineServer.Timer1.Stop()
+            FormEasyMineServer.TimerCPU.Stop()
 
         ElseIf (INIREAD01 = "TRUE") Then
 
             SETTINGS.Button4.Text = "SHOW PROCESSOR: ON"
 
             FormEasyMineServer.Label1.Visible = True
-            FormEasyMineServer.Timer1.Start()
+            FormEasyMineServer.TimerCPU.Start()
 
         End If
 
         If (INIREAD02 = "FALSE") Then
 
+            FormEasyMineServer.Label6.Visible = False
+            SETTINGS.Button5.Text = "SHOW RAM: OFF"
+            FormEasyMineServer.TimerMEM.Stop()
+
+        ElseIf (INIREAD02 = "TRUE") Then
+
+            FormEasyMineServer.Label6.Visible = True
+            SETTINGS.Button5.Text = "SHOW RAM: ON"
+            FormEasyMineServer.TimerMEM.Start()
+
+
+        End If
+
+
+        If (INIREAD03 = "FALSE") Then
+
             SETTINGS.Button6.Text = "ACTIVE SOUND ALERT: OFF"
 
-        ElseIf (INIREAD02 = True) Then
+        ElseIf (INIREAD03 = "TRUE") Then
 
             SETTINGS.Button6.Text = "ACTIVE SOUND ALERT: ON"
 
         End If
+
 
     End Sub
 

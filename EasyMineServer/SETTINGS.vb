@@ -21,7 +21,7 @@ Public Class SETTINGS
 
             Button4.Text = "SHOW PROCESSOR: ON" 'ENABLE'
             FormEasyMineServer.Label1.Visible = True
-            FormEasyMineServer.Timer1.Start()
+            FormEasyMineServer.TimerCPU.Start()
 
         Else
 
@@ -30,7 +30,31 @@ Public Class SETTINGS
 
             Button4.Text = "SHOW PROCESSOR: OFF" 'DISABLE'
             FormEasyMineServer.Label1.Visible = False
-            FormEasyMineServer.Timer1.Stop()
+            FormEasyMineServer.TimerCPU.Stop()
+
+        End If
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+
+        If (Button5.Text = "SHOW RAM: OFF") Then
+
+            sound_click()
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "RAMD", "TRUE")
+
+            Button5.Text = "SHOW RAM: ON" 'ENABLE'
+            FormEasyMineServer.Label6.Visible = True
+            FormEasyMineServer.TimerMEM.Start()
+
+        Else
+
+            sound_click()
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "RAMD", "FALSE")
+
+            Button5.Text = "SHOW RAM: OFF" 'DISABLE'
+            FormEasyMineServer.Label6.Visible = False
+            FormEasyMineServer.TimerMEM.Stop()
 
         End If
 
@@ -93,19 +117,28 @@ Public Class SETTINGS
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        sound_click()
-        Dim input As String = InputBox("Enter your RAM server here (ex: For 4 GB = Write the number 4)", "Insert your RAM server")
+        Try
 
-        If (input = Nothing) Then
 
-            Exit Sub
 
-        End If
+            sound_click()
+            Dim input As String = InputBox("Enter your RAM server here (ex: For 4 GB = Write the number 4)", "Insert your RAM server")
 
-        Dim result As String = input * 1024
-        FormEasyMineServer.INIFILE.WriteString("CONFIG", "RAM_S", result)
-        SETTINGS_Load()
+            If (input = Nothing) Then
 
+                Exit Sub
+
+            End If
+
+            Dim result As String = input * 1024
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "RAM_S", result)
+            SETTINGS_Load()
+
+        Catch ex As Exception
+
+
+
+        End Try
     End Sub
 
     Public Sub SETTINGS_Load()
@@ -115,5 +148,4 @@ Public Class SETTINGS
         Label4.Text = RAM_S
 
     End Sub
-
 End Class

@@ -7,6 +7,7 @@ Public Class FormEasyMineServer
     Public Locationappdataroaming1 As String = Path.GetTempPath.ToString
     Public WithEvents DownloadFile As New WebClient
     Dim cpu As New PerformanceCounter("Processor information", "% processor time", "_Total")
+    Dim MEM As New PerformanceCounter("Memory", "% Committed Bytes In Use")
     Public Shared p As New Process()
     Dim code As String
     Dim k As String
@@ -147,6 +148,8 @@ Public Class FormEasyMineServer
 
         DownloadFile.CachePolicy = New System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore)
         DownloadFile.Headers.Clear()
+
+        sound_click()
 
     End Sub
 
@@ -296,19 +299,49 @@ Public Class FormEasyMineServer
         End If
 
     End Sub
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles TimerCPU.Tick
 
         Try
 
             Dim cpuload As Integer = CDec(cpu.NextValue.ToString())
-            Label1.Text = "Processor : " & cpuload & "%"
+            Label1.Text = "Processor: " & cpuload & "%"
 
             If (cpuload >= 80) Then
 
                 Label1.ForeColor = Color.Red
 
-                If (INIFILE.GetString("CONFIG", "SOUNDALERT", "") = True) Then
+                If (INIFILE.GetString("CONFIG", "SOUNDALERT", "") = "TRUE") Then
+
+                    My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
+
+                End If
+
+            Else
+
+                Label1.ForeColor = Color.White
+
+            End If
+
+        Catch ex As Exception
+
+
+
+        End Try
+
+    End Sub
+
+    Private Sub TimerMEM_Tick(sender As Object, e As EventArgs) Handles TimerMEM.Tick
+
+        Try
+
+            Dim memload As Integer = CDec(MEM.NextValue.ToString())
+            Label6.Text = "MEM: " & memload & "%"
+
+            If (memload >= 80) Then
+
+                Label1.ForeColor = Color.Red
+
+                If (INIFILE.GetString("CONFIG", "SOUNDALERT", "") = "TRUE") Then
 
                     My.Computer.Audio.Play(My.Resources.Alert, AudioPlayMode.Background)
 
@@ -380,5 +413,4 @@ Public Class FormEasyMineServer
         End Try
 
     End Sub
-
 End Class

@@ -34,12 +34,13 @@ Partial Class FormEasyMineServer
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label3 = New System.Windows.Forms.Label()
 		Me.Button4 = New System.Windows.Forms.Button()
-		Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+		Me.TimerCPU = New System.Windows.Forms.Timer(Me.components)
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.Label5 = New System.Windows.Forms.Label()
 		Me.Button5 = New System.Windows.Forms.Button()
 		Me.Button6 = New System.Windows.Forms.Button()
 		Me.Label6 = New System.Windows.Forms.Label()
+		Me.TimerMEM = New System.Windows.Forms.Timer(Me.components)
 		Me.SuspendLayout()
 		'
 		'Button1
@@ -83,9 +84,9 @@ Partial Class FormEasyMineServer
 		Me.Label1.Location = New System.Drawing.Point(9, 9)
 		Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(139, 16)
+		Me.Label1.Size = New System.Drawing.Size(133, 16)
 		Me.Label1.TabIndex = 4
-		Me.Label1.Text = "Processor : 0%"
+		Me.Label1.Text = "Processor: 0%"
 		'
 		'TextBox1
 		'
@@ -169,9 +170,9 @@ Partial Class FormEasyMineServer
 		Me.Button4.Text = "Options"
 		Me.Button4.UseVisualStyleBackColor = False
 		'
-		'Timer1
+		'TimerCPU
 		'
-		Me.Timer1.Interval = 1000
+		Me.TimerCPU.Interval = 1000
 		'
 		'Label4
 		'
@@ -243,13 +244,17 @@ Partial Class FormEasyMineServer
 		Me.Label6.BackColor = System.Drawing.Color.Transparent
 		Me.Label6.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label6.ForeColor = System.Drawing.Color.White
-		Me.Label6.Location = New System.Drawing.Point(595, 9)
+		Me.Label6.Location = New System.Drawing.Point(599, 9)
 		Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(96, 16)
+		Me.Label6.Size = New System.Drawing.Size(87, 16)
 		Me.Label6.TabIndex = 19
-		Me.Label6.Text = "RAM : 0MB"
+		Me.Label6.Text = "RAM : 0%"
 		Me.Label6.Visible = False
+		'
+		'TimerMEM
+		'
+		Me.TimerMEM.Interval = 1000
 		'
 		'FormEasyMineServer
 		'
@@ -294,10 +299,11 @@ Partial Class FormEasyMineServer
 	Friend WithEvents Label2 As System.Windows.Forms.Label
 	Friend WithEvents Label3 As System.Windows.Forms.Label
 	Friend WithEvents Button4 As System.Windows.Forms.Button
-	Friend WithEvents Timer1 As System.Windows.Forms.Timer
+	Friend WithEvents TimerCPU As System.Windows.Forms.Timer
 	Friend WithEvents Label4 As System.Windows.Forms.Label
 	Friend WithEvents Label5 As System.Windows.Forms.Label
 	Friend WithEvents Button5 As System.Windows.Forms.Button
 	Friend WithEvents Button6 As System.Windows.Forms.Button
 	Friend WithEvents Label6 As Label
+	Friend WithEvents TimerMEM As Timer
 End Class

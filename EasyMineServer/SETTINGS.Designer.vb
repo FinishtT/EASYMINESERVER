@@ -108,6 +108,8 @@ Partial Class SETTINGS
 		Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
 		Me.Button2.BackColor = System.Drawing.Color.Transparent
 		Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White
+		Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
 		Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.Button2.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Button2.ForeColor = System.Drawing.Color.White
@@ -123,6 +125,8 @@ Partial Class SETTINGS
 		Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
 		Me.Button3.BackColor = System.Drawing.Color.Transparent
 		Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.White
+		Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
 		Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.Button3.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Button3.ForeColor = System.Drawing.Color.White
@@ -137,6 +141,8 @@ Partial Class SETTINGS
 		'
 		Me.Button4.BackColor = System.Drawing.Color.Transparent
 		Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.White
+		Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
 		Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.Button4.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Button4.ForeColor = System.Drawing.Color.White
@@ -151,8 +157,8 @@ Partial Class SETTINGS
 		'
 		Me.Button5.BackColor = System.Drawing.Color.Transparent
 		Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-		Me.Button5.Enabled = False
-		Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+		Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.White
+		Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
 		Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.Button5.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Button5.ForeColor = System.Drawing.Color.White
@@ -167,6 +173,8 @@ Partial Class SETTINGS
 		'
 		Me.Button6.BackColor = System.Drawing.Color.Transparent
 		Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+		Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.White
+		Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
 		Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.Button6.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Button6.ForeColor = System.Drawing.Color.White
