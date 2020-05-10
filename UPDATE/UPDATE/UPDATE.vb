@@ -42,7 +42,7 @@ Public Class UPDATE
         Try
 
 
-            If (download.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf").Remove(2, 1) = maj) Then 'file.txt,file.ini,etc...'
+            If (download.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf") = maj) Then 'file.txt,file.ini,etc...'
 
                 Close()
 

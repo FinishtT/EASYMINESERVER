@@ -14,7 +14,7 @@ Public Class FormEasyMineServer
     Public Shared vServerMinecraft As String
     Public Shared INIFILE As New clsIni(Environment.CurrentDirectory & "\config.ini")
     Public Conflink As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
-    Public Shared maj As String = "1.9"
+    Public Shared maj As String = "1.9  "
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
@@ -52,7 +52,7 @@ Public Class FormEasyMineServer
         'MAJ'
         Try
 
-            If (DownloadFile.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf").Remove(2, 1) = maj) Then
+            If (DownloadFile.DownloadString("https://raw.githubusercontent.com/XsplitS/EASYMINESERVER/master/VERSION/VERSION.conf").Remove(5, 1) = maj) Then
 
             Else
 
