@@ -533,20 +533,21 @@
 </value>
   </data>
   <data name="Label5.Text" xml:space="preserve">
-    <value>Créer facilement votre serveur Minecraft en toute simplicité.
-Votre serveur Minecraft peut-être héberger dans les deux sens:
-Localement et via le cloud.
-Pour jouer avec le monde extérieur il suffit d'ouvir le port via
- le protocol TCP (par defaut: 25565) via la page de votre routeur (box internet).
-Créer à partir de:
+    <value>Create easily your Minecraft server.
+Your Minecraft server can be hosted in both directions:
+Locally and in the Cloud.
+To play with outisde world, just open your port on the TCP protocol
+(default: 25565).
+
+Create with:
 .Net framework 4.5
-Language de programmation: VB.NET
+Programming language: VB.NET
 
-Merci aux sites:
-Github pour l'hébergement du logiciel et toutes autres informations.
-api.ipify.org pour recevoir l'ipv4 du routeur en format RAW.
+Thanks to the sites:
+Github: for hosted software and all other information.
+ipify.org: to receive the router's ipv4 in RAW format.
 
-Copyright©: 2018-2020 HRTM. All rights reserved.</value>
+Copyright ©: 2018-2020 HRTM. All rights reserved.</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
