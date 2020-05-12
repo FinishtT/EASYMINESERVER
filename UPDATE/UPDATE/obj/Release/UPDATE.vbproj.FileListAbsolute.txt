@@ -77,3 +77,7 @@ E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Releas
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.exe
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.xml
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.pdb
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.exe.config
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.exe
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.pdb
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.xml
