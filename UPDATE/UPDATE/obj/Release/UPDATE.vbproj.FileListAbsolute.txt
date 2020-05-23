@@ -69,11 +69,9 @@ E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Releas
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Release\UPDATE.exe
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Release\UPDATE.pdb
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\bin\Release\UPDATE.xml
-E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.vbprojAssemblyReference.cache
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.UPDATE.resources
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.Resources.resources
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.vbproj.GenerateResource.cache
-E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.vbproj.CoreCompileInputs.cache
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.exe
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.xml
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.pdb
@@ -81,3 +79,4 @@ E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Relea
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.exe
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.pdb
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.xml
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.vbprojResolveAssemblyReference.cache

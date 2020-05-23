@@ -78,9 +78,31 @@ Public Class SETTINGS
 
     End Sub
 
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+
+        If (Label5.Text = "VANILLA") Then
+
+            Label5.Text = "SPIGOT"
+
+        ElseIf (Label5.Text = "SPIGOT") Then
+
+            Label5.Text = "CRAFTBUKKIT"
+
+        ElseIf (Label5.Text = "CRAFTBUKKIT") Then
+
+            Label5.Text = "VANILLA"
+
+        End If
+
+        FormEasyMineServer.INIFILE.WriteString("CONFIG", "API_S", Label5.Text)
+        SETTINGS_Load()
+
+    End Sub
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         sound_click()
+
         Dim input1 As String = InputBox("Enter server version here (ex: 1.7.2)", "Insert your version server")
 
         If (input1 = Nothing) Then
@@ -89,27 +111,21 @@ Public Class SETTINGS
 
         End If
 
-        Dim readVersion As StreamReader = New StreamReader(FormEasyMineServer.LocationAppdata & "\EASYMINESERVER\CONFIG\VersionSM.txt")
+        Dim Conflink As New clsIni(FormEasyMineServer.LocationAppdata & "\EASYMINESERVER\CONFIG\VersionSM.ini")
 
-        While Not readVersion.EndOfStream
+        If (input1 = Conflink.GetString(API_S, input1, "")) Then
 
-            If (input1 = readVersion.ReadLine) Then
+            FormEasyMineServer.INIFILE.WriteString("CONFIG", "VERSION_S", input1)
+            SETTINGS_Load()
+            Exit Sub
 
-                readVersion.Close()
-
-                FormEasyMineServer.INIFILE.WriteString("CONFIG", "VERSION_S", input1)
-                SETTINGS_Load()
-                Exit Sub
-
-            End If
-
-        End While
+        End If
 
         Dim msgbox1 As Integer = MsgBox("The entering version is not correct, do you want open file for views all version available here ?", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo)
 
         If (msgbox1 = vbYes) Then
 
-            Process.Start(FormEasyMineServer.LocationAppdata & "\EASYMINESERVER\CONFIG\VersionSM.txt")
+            Process.Start(FormEasyMineServer.LocationAppdata & "\EASYMINESERVER\CONFIG\VersionSM.ini")
 
         End If
 
@@ -146,6 +162,8 @@ Public Class SETTINGS
         reload()
         Label3.Text = VERSIONS_S
         Label4.Text = RAM_S
+        Label5.Text = API_S
 
     End Sub
+
 End Class

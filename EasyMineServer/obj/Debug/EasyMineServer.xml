@@ -23,9 +23,12 @@ EasyMineServer
 	<summary>
   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
 </summary>
-</member><member name="P:EasyMineServer.My.Resources.Resources.server">
+</member><member name="P:EasyMineServer.My.Resources.Resources.Config">
 	<summary>
-  Looks up a localized resource of type System.Byte[].
+  Looks up a localized string similar to [CONFIG]
+
+PROCD = TRUE
+SOUNDALERT = FALSE.
 </summary>
 </member><member name="T:EasyMineServer.My.Resources.Resources">
 	<summary>

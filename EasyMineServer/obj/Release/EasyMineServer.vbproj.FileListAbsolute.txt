@@ -73,14 +73,12 @@ G:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Relea
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\EasyMineServer.exe
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\EasyMineServer.pdb
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\EasyMineServer.xml
-E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbprojAssemblyReference.cache
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.About.resources
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.Resources.resources
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.SPLASH.resources
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.SETTINGS.resources
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.FormEasyMineServer.resources
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbproj.GenerateResource.cache
-E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbproj.CoreCompileInputs.cache
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.exe
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.xml
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.pdb
@@ -98,3 +96,4 @@ F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Relea
 F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.exe
 F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.xml
 F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.pdb
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbprojResolveAssemblyReference.cache

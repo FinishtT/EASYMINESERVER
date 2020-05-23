@@ -4,11 +4,13 @@ Module MOthers
 
     Public VERSIONS_S As String = FormEasyMineServer.INIFILE.GetString("CONFIG", "VERSION_S", "").ToString()
     Public RAM_S As String = FormEasyMineServer.INIFILE.GetString("CONFIG", "RAM_S", "").ToString()
+    Public API_S As String = FormEasyMineServer.INIFILE.GetString("CONFIG", "API_S", "").ToString()
 
     Public Sub reload()
 
         VERSIONS_S = FormEasyMineServer.INIFILE.GetString("CONFIG", "VERSION_S", "").ToString()
         RAM_S = FormEasyMineServer.INIFILE.GetString("CONFIG", "RAM_S", "").ToString()
+        API_S = FormEasyMineServer.INIFILE.GetString("CONFIG", "API_S", "").ToString()
 
     End Sub
 
@@ -40,12 +42,12 @@ Module MOthers
 
             End If
 
-            FormEasyMineServer.vServerMinecraft = FormEasyMineServer.Conflink.GetString("DOWNLOADSERVERLIST", VERSIONS_S, "")
+            FormEasyMineServer.vServerMinecraft = FormEasyMineServer.Conflink.GetString(API_S, VERSIONS_S, "")
             FormEasyMineServer.DownloadFile.DownloadFileAsync(New Uri(FormEasyMineServer.vServerMinecraft), VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")
 
         Catch ex As Exception
 
-            MsgBox("Error with the download LINK !")
+            MsgBox(ex.Message & "Error with the download LINK !")
 
             FormEasyMineServer.TextBox1.ReadOnly = True
             FormEasyMineServer.TextBox1.Clear()
@@ -68,6 +70,7 @@ Module MOthers
 
                     cc.Close()
                     File.WriteAllText(VERSIONS_S & "/eula.txt", "eula=true")
+
                 End If
 
             Else
