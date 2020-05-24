@@ -81,11 +81,15 @@ Public Class UPDATE
 
             File.Delete("EasyMineServer.exe")
 
-            NotesLabel.Text = "Deleting file 'config.ini'"
+            If (File.Exists("config.ini")) Then
 
-            Await Task.Delay(2000)
+                NotesLabel.Text = "Deleting file 'config.ini'"
 
-            File.Delete("config.ini")
+                Await Task.Delay(2000)
+
+                File.Delete("config.ini")
+
+            End If
 
             ProgressBar.Value = 100
 

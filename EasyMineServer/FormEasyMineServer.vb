@@ -83,6 +83,7 @@ Public Class FormEasyMineServer
 
         If (File.Exists(Locationappdataroaming1 & "\Download\UPDATE.exe")) Then
 
+            File.Delete("config.ini")
             File.Copy(Locationappdataroaming1 & "\Download\UPDATE.exe", "UPDATE.exe", True)
             Directory.Delete(Locationappdataroaming1 & "\Download", True)
 
