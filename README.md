@@ -5,7 +5,7 @@ Hello everybody !
 The goal is of easy the life of people for create a Minecraft server.
 
 If you have any ideas or suggestions,
-1) Join me on Discord at this invite address: https://discord.gg/TQ6hgXB
+1) Join me on Discord at this invite address: https://discord.gg/2TkGCzj
 
 The project is not stopped.
 
