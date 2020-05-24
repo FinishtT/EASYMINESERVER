@@ -32,18 +32,18 @@ Module MOthers
 
         Try
 
-            If (IO.Directory.Exists(VERSIONS_S)) Then
+            If (IO.Directory.Exists(API_S & "/" & VERSIONS_S)) Then
 
 
 
             Else
 
-                IO.Directory.CreateDirectory(VERSIONS_S)
+                IO.Directory.CreateDirectory(API_S & "/" & VERSIONS_S)
 
             End If
 
             FormEasyMineServer.vServerMinecraft = FormEasyMineServer.Conflink.GetString(API_S, VERSIONS_S, "")
-            FormEasyMineServer.DownloadFile.DownloadFileAsync(New Uri(FormEasyMineServer.vServerMinecraft), VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")
+            FormEasyMineServer.DownloadFile.DownloadFileAsync(New Uri(FormEasyMineServer.vServerMinecraft), API_S & "/" & VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")
 
         Catch ex As Exception
 
@@ -60,29 +60,29 @@ Module MOthers
 
     Public Sub launchServer()
 
-        If (File.Exists(VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")) Then
+        If (File.Exists(API_S & "/" & VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")) Then
 
-            If (File.Exists(VERSIONS_S & "/eula.txt")) Then
+            If (File.Exists(API_S & "/" & VERSIONS_S & "/eula.txt")) Then
 
-                Dim cc As New StreamReader(VERSIONS_S & "/eula.txt")
+                Dim cc As New StreamReader(API_S & "/" & VERSIONS_S & "/eula.txt")
 
                 If (cc.ReadToEnd = "eula=true" = False) Then
 
                     cc.Close()
-                    File.WriteAllText(VERSIONS_S & "/eula.txt", "eula=true")
+                    File.WriteAllText(API_S & "/" & VERSIONS_S & "/eula.txt", "eula=true")
 
                 End If
 
             Else
 
-                File.WriteAllText(VERSIONS_S & "/eula.txt", "eula=true")
+                File.WriteAllText(API_S & "/" & VERSIONS_S & "/eula.txt", "eula=true")
 
             End If
 
 
 
 
-            Dim thisserv As New FileInfo(VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")
+            Dim thisserv As New FileInfo(API_S & "/" & VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")
 
             FormEasyMineServer.p.StartInfo.CreateNoWindow = True
             FormEasyMineServer.p.StartInfo.UseShellExecute = False

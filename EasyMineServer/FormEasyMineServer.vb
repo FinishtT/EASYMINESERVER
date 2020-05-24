@@ -15,7 +15,7 @@ Public Class FormEasyMineServer
     Public Shared vServerMinecraft As String
     Public Shared INIFILE As New clsIni(Environment.CurrentDirectory & "\config.ini")
     Public Conflink As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
-    Public Shared maj As String = "1.9.2"
+    Public Shared maj As String = "1.9.3"
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
@@ -160,7 +160,7 @@ Public Class FormEasyMineServer
         sound_click()
         DisableAll()
 
-        If (File.Exists(VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")) Then
+        If (File.Exists(API_S & "/" & VERSIONS_S & "/minecraft_server." & VERSIONS_S & ".jar")) Then
 
             launchServer()
 
@@ -406,7 +406,7 @@ Public Class FormEasyMineServer
         sound_click()
         Try
 
-            Process.Start(VERSIONS_S & "\server.properties")
+            Process.Start(API_S & "/" & VERSIONS_S & "\server.properties")
 
         Catch ex As Exception
 

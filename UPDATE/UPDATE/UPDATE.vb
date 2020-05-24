@@ -3,7 +3,7 @@ Imports System.Net
 
 Public Class UPDATE
 
-    Dim maj As String = "1.9.2"
+    Dim maj As String = "1.9.3"
 
     Public Locationappdataroaming1 As String = Path.GetTempPath
     Public WithEvents download As New WebClient
@@ -73,7 +73,7 @@ Public Class UPDATE
 
             ProgressBar.Value = 0
 
-            NotesLabel.Text = "Suppression du fichier 'EasyMineServer.exe'"
+            NotesLabel.Text = "Deleting file 'EasyMineServer.exe'"
 
             Await Task.Delay(2000)
 
@@ -123,7 +123,7 @@ Public Class UPDATE
     Private Async Sub download_DownloadProgressChanged(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles download.DownloadProgressChanged
 
         ProgressBar.Value = e.ProgressPercentage
-        NotesLabel.Text = "Téléchargement des fichiers en cours (EASYMINESERVER.exe)" & e.ProgressPercentage & "%"
+        NotesLabel.Text = "Downloading (EASYMINESERVER.exe)" & e.ProgressPercentage & "%"
 
         If (ProgressBar.Value = 100) Then
 
@@ -137,7 +137,7 @@ Public Class UPDATE
 
                 Else
 
-                    NotesLabel.Text = "Téléchargement des fichiers en cours (UPDATE.exe)" & e.ProgressPercentage & "%"
+                    NotesLabel.Text = "Downloading (UPDATE.exe)" & e.ProgressPercentage & "%"
 
                     Await Task.Delay(2000)
 
@@ -147,13 +147,13 @@ Public Class UPDATE
 
                 End If
 
-                NotesLabel.Text = "Copie des fichiers en cours"
+                NotesLabel.Text = "Copy files in progress"
 
                 File.Copy(Locationappdataroaming1 & "\Download\EasyMineServer.exe", "EasyMineServer.exe", True)
 
                 Await Task.Delay(3000)
 
-                NotesLabel.Text = "Lancement de l'application EASYMINESERVER.exe"
+                NotesLabel.Text = "Launching software EASYMINESERVER.exe"
 
                 Await Task.Delay(2000)
 
