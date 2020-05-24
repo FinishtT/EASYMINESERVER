@@ -75,11 +75,17 @@ Public Class UPDATE
 
             NotesLabel.Text = "Deleting file 'EasyMineServer.exe'"
 
-            Await Task.Delay(2000)
-
             ProgressBar.Value = 30
 
+            Await Task.Delay(2000)
+
             File.Delete("EasyMineServer.exe")
+
+            NotesLabel.Text = "Deleting file 'config.ini'"
+
+            Await Task.Delay(2000)
+
+            File.Delete("config.ini")
 
             ProgressBar.Value = 100
 
