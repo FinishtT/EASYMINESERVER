@@ -15,7 +15,7 @@ Public Class FormEasyMineServer
     Public Shared vServerMinecraft As String
     Public Shared INIFILE As New clsIni(Environment.CurrentDirectory & "\config.ini")
     Public Conflink As New clsIni(LocationAppdata & "\EASYMINESERVER\CONFIG\ConfLink.ini")
-    Public Shared maj As String = "1.9.3"
+    Public Shared maj As String = "1.9.4"
 
     Public Sub DownloadProgression(sender As Object, ByVal e As DownloadProgressChangedEventArgs) Handles DownloadFile.DownloadProgressChanged
 
@@ -370,13 +370,6 @@ Public Class FormEasyMineServer
         SETTINGS.SETTINGS_Load()
         SETTINGS.Show()
         Me.Hide()
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-
-        sound_click()
-        Process.Start("https://github.com/XsplitS/EASYMINESERVER/issues")
 
     End Sub
 

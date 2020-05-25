@@ -36,6 +36,7 @@ Partial Class SETTINGS
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -60,7 +61,7 @@ Partial Class SETTINGS
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(48, 144)
+        Me.Label1.Location = New System.Drawing.Point(27, 144)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 16)
         Me.Label1.TabIndex = 22
@@ -72,7 +73,7 @@ Partial Class SETTINGS
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(76, 176)
+        Me.Label2.Location = New System.Drawing.Point(55, 176)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(50, 16)
         Me.Label2.TabIndex = 24
@@ -86,7 +87,7 @@ Partial Class SETTINGS
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(132, 145)
+        Me.Label3.Location = New System.Drawing.Point(111, 145)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(96, 16)
         Me.Label3.TabIndex = 25
@@ -100,7 +101,7 @@ Partial Class SETTINGS
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(132, 177)
+        Me.Label4.Location = New System.Drawing.Point(111, 177)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(96, 16)
         Me.Label4.TabIndex = 26
@@ -116,9 +117,9 @@ Partial Class SETTINGS
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(236, 140)
+        Me.Button2.Location = New System.Drawing.Point(215, 140)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(169, 26)
+        Me.Button2.Size = New System.Drawing.Size(82, 26)
         Me.Button2.TabIndex = 27
         Me.Button2.Text = "MODIFY"
         Me.Button2.UseVisualStyleBackColor = False
@@ -133,9 +134,9 @@ Partial Class SETTINGS
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(236, 172)
+        Me.Button3.Location = New System.Drawing.Point(215, 172)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(169, 26)
+        Me.Button3.Size = New System.Drawing.Size(190, 26)
         Me.Button3.TabIndex = 28
         Me.Button3.Text = "MODIFY"
         Me.Button3.UseVisualStyleBackColor = False
@@ -199,9 +200,9 @@ Partial Class SETTINGS
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(234, 108)
+        Me.Button7.Location = New System.Drawing.Point(213, 108)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(171, 25)
+        Me.Button7.Size = New System.Drawing.Size(192, 25)
         Me.Button7.TabIndex = 34
         Me.Button7.Text = "MODIFY"
         Me.Button7.UseVisualStyleBackColor = False
@@ -213,7 +214,7 @@ Partial Class SETTINGS
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(132, 112)
+        Me.Label5.Location = New System.Drawing.Point(111, 112)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(96, 16)
         Me.Label5.TabIndex = 33
@@ -225,11 +226,28 @@ Partial Class SETTINGS
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Minecraft", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(83, 112)
+        Me.Label6.Location = New System.Drawing.Point(62, 112)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(43, 16)
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "API:"
+        '
+        'Button8
+        '
+        Me.Button8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button8.BackColor = System.Drawing.Color.Transparent
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Minecraft", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.Color.White
+        Me.Button8.Location = New System.Drawing.Point(303, 140)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(102, 26)
+        Me.Button8.TabIndex = 35
+        Me.Button8.Text = "Link Broken"
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'SETTINGS
         '
@@ -239,6 +257,7 @@ Partial Class SETTINGS
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(417, 243)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label6)
@@ -264,7 +283,7 @@ Partial Class SETTINGS
         Me.PerformLayout()
 
     End Sub
-	Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 	Friend WithEvents Label1 As Label
 	Friend WithEvents Label2 As Label
 	Friend WithEvents Label3 As Label
@@ -277,4 +296,5 @@ Partial Class SETTINGS
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Button8 As Button
 End Class

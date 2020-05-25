@@ -79,4 +79,5 @@ E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Relea
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.exe
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.pdb
 E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\bin\Release\UPDATE.xml
-E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.vbprojResolveAssemblyReference.cache
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.vbprojAssemblyReference.cache
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\UPDATE\UPDATE\obj\Release\UPDATE.vbproj.CoreCompileInputs.cache

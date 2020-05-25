@@ -157,6 +157,13 @@ Public Class SETTINGS
         End Try
     End Sub
 
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
+        sound_click()
+        Process.Start("https://github.com/XsplitS/EASYMINESERVER/issues")
+
+    End Sub
+
     Public Sub SETTINGS_Load()
 
         reload()

@@ -96,4 +96,5 @@ F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Relea
 F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.exe
 F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.xml
 F:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.pdb
-E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbprojResolveAssemblyReference.cache
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbprojAssemblyReference.cache
+E:\Projects Visual Studio\EASYMINESERVER\EASYMINESERVER\EasyMineServer\obj\Release\EasyMineServer.vbproj.CoreCompileInputs.cache

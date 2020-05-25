@@ -3,7 +3,7 @@ Imports System.Net
 
 Public Class UPDATE
 
-    Dim maj As String = "1.9.3"
+    Dim maj As String = "1.9.4"
 
     Public Locationappdataroaming1 As String = Path.GetTempPath
     Public WithEvents download As New WebClient
